@@ -1,0 +1,51 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Project {
+  id          String   @id @default(cuid())
+  title       String
+  category    String
+  domain      String
+  difficulty  String
+  description String
+  techStack   String
+  features    String[]
+  image       String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Lead {
+  id           String   @id @default(cuid())
+  name         String
+  college      String
+  branch       String
+  phone        String
+  email        String
+  interest     String
+  source       String
+  createdAt    DateTime @default(now())
+}
+
+model Testimonial {
+  id      String   @id @default(cuid())
+  name    String
+  role    String
+  quote   String
+  createdAt DateTime @default(now())
+}
+
+model BlogPost {
+  id          String   @id @default(cuid())
+  title       String
+  slug        String   @unique
+  summary     String
+  content     String
+  publishedAt DateTime @default(now())
+}

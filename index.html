@@ -3,22 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Website</title>
+    <title>EmbeddedX Projects | Embedded & IoT Lead Generation</title>
+    <meta name="description" content="Professional Embedded Systems and IoT project solutions for students and colleges, featuring project portfolios, college partnerships, and consultation booking.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">EmbeddedX Projects</a>
+            <nav class="site-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="services.html">Services</a>
+                <a href="college-partnership.html">College</a>
+                <a href="internships.html">Internships</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a href="https://wa.me/911234567890" class="btn btn-primary">WhatsApp</a>
+        </div>
     </header>
+
     <main>
-        <p>This site is successfully hosted for free on GitHub Pages!</p>
-        <button id="alertBtn">Click Me</button>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Industry-oriented final year projects</p>
+                    <h1>Industry-Oriented Final Year Projects in Embedded Systems, IoT & Wireless Technologies</h1>
+                    <p>Transform your academic project into a real-world innovation with expert mentoring, hardware development, software implementation, documentation support, and deployment guidance.</p>
+                    <div class="hero-actions">
+                        <a href="projects.html" class="btn btn-primary">Explore Projects</a>
+                        <a href="contact.html" class="btn btn-secondary">Book Consultation</a>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <div class="card-top">
+                        <h2>Project Discovery</h2>
+                        <p>Smart Agriculture, Energy Management, Vehicle Tracking, Healthcare Monitoring, Industrial IoT and more.</p>
+                    </div>
+                    <ul class="hero-features">
+                        <li>Embedded Systems & ESP32</li>
+                        <li>Cloud Dashboards & MQTT</li>
+                        <li>LoRa, BLE, Wi-Fi & Zigbee</li>
+                        <li>Student leads and college partnerships</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="container stats-grid">
+                <div class="stat-card"><strong>100+</strong><span>Projects Delivered</span></div>
+                <div class="stat-card"><strong>25+</strong><span>Partner Colleges</span></div>
+                <div class="stat-card"><strong>500+</strong><span>Students Guided</span></div>
+                <div class="stat-card"><strong>10+</strong><span>Technologies Covered</span></div>
+            </div>
+        </section>
+
+        <section class="expertise-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p>Technology Expertise</p>
+                    <h2>Embedded, IoT, Wireless, and Industry 4.0 Solutions</h2>
+                </div>
+                <div class="expertise-grid">
+                    <article>
+                        <h3>Embedded Systems</h3>
+                        <p>STM32, ESP32, ARM Cortex, AVR, PIC</p>
+                    </article>
+                    <article>
+                        <h3>IoT Solutions</h3>
+                        <p>MQTT, Azure IoT, AWS IoT, Cloud Dashboards</p>
+                    </article>
+                    <article>
+                        <h3>Wireless Communication</h3>
+                        <p>LoRa, Zigbee, BLE, Wi-Fi</p>
+                    </article>
+                    <article>
+                        <h3>Industry 4.0</h3>
+                        <p>Edge AI, Smart Manufacturing, Predictive Maintenance</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-preview-section">
+            <div class="container">
+                <div class="section-heading">
+                    <p>Project Categories</p>
+                    <h2>Projects that bridge academic work with industry needs</h2>
+                </div>
+                <div class="project-grid">
+                    <article>
+                        <h3>Smart Agriculture Monitoring</h3>
+                        <p>Soil moisture monitoring, cloud analytics, and mobile alerting for modern farms.</p>
+                    </article>
+                    <article>
+                        <h3>Smart Energy Meter</h3>
+                        <p>Real-time power monitoring, consumption reports and IoT-based dashboard control.</p>
+                    </article>
+                    <article>
+                        <h3>Smart Vehicle Tracking</h3>
+                        <p>GPS tracking, GSM reporting, and ESP32-based live location alerts.</p>
+                    </article>
+                    <article>
+                        <h3>Digital Health Monitoring</h3>
+                        <p>Heart rate and temperature tracking with wireless alerts and reporting.</p>
+                    </article>
+                </div>
+                <div class="section-cta">
+                    <a href="projects.html" class="btn btn-primary">View Full Project Catalog</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial-section">
+            <div class="container testimonial-grid">
+                <div>
+                    <p class="eyebrow">Testimonials</p>
+                    <h2>Trusted by students and colleges</h2>
+                </div>
+                <div class="testimonial-card">
+                    <p>“The embedded project mentorship helped me build a professional portfolio and secure placement interviews.”</p>
+                    <span>— Priya Sharma, Final Year Student</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>“The college partnership program delivered high-quality projects and technical workshops for our students.”</p>
+                    <span>— Dr. R. N. Rao, HOD, Electronics</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="lead-form-section">
+            <div class="container lead-grid">
+                <div>
+                    <p class="eyebrow">Lead Capture</p>
+                    <h2>Schedule a free project discussion</h2>
+                    <p>Submit your college, branch, and area of interest to receive a personalized project recommendation.</p>
+                </div>
+                <form class="lead-form">
+                    <label>Name<input type="text" placeholder="Your name"></label>
+                    <label>College<input type="text" placeholder="College name"></label>
+                    <label>Branch<input type="text" placeholder="Branch or department"></label>
+                    <label>Phone<input type="tel" placeholder="Mobile number"></label>
+                    <label>Email<input type="email" placeholder="Email address"></label>
+                    <label>Area of Interest<input type="text" placeholder="Embedded / IoT / Wireless"></label>
+                    <button type="submit" class="btn btn-primary">Schedule Free Consultation</button>
+                </form>
+            </div>
+        </section>
     </main>
-    <script>
-        // Simple interactive JavaScript
-        document.getElementById('alertBtn').addEventListener('click', () => {
-            alert('Hello! Your JavaScript works perfectly on GitHub Pages.');
-        });
-    </script>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <p>EmbeddedX Projects — Final Year Embedded, IoT & Wireless Solutions</p>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="download-catalog.html">Download Catalog</a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/911234567890" class="whatsapp-float">Chat with Project Expert</a>
 </body>
 </html>
